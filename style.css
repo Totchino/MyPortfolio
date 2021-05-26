@@ -206,11 +206,11 @@ h1 {
     font-size: 90px;
     font-family: 'Abril Fatface', sans-serif;
     margin: 0 60px;
-    padding-top: 210px;
+    padding-top: 195px;
 }
 .txt-animation {
     font-family: 'DotGothic16', sans-serif;
-    font-size: 45px;
+    font-size: 42px;
     margin: 10px 0 10px 60px;
 }
 .btn-acc {
@@ -449,12 +449,13 @@ h1 {
     margin: 50px 0 130px 0;
     flex-shrink: 0;
     padding-left: 300px;
+    /* background-color: pink; */
 }
 .pres-gauche {
-    width: 600px;
+    width: 800px;
     flex-shrink: 0;
     margin-bottom: 50px;
-    padding-left: 120px;
+    padding-left: 0px;
     padding-top: 20px;
 }
 .pres-gauche h3 {
@@ -603,6 +604,7 @@ h1 {
     overflow: hidden;
 }
 .cont-img-port img {
+    margin-top: 30px;
     width: 100%;
     height: auto;
 }
@@ -698,6 +700,20 @@ h1 {
 }
 .range-cont {
     position: relative;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 24px;
+}
+.range-cont p {
+    
+    /* background-color: rebeccapurple; */
+}
+.range-cont img {
+    width: 20%;
+
 }
 .titre-exp {
     font-size: 40px;
@@ -707,51 +723,12 @@ h1 {
 }
 .grille-skill {
     display: grid;
-    grid-template: repeat(3,80px) / repeat(2, 500px);
+    grid-template: repeat(3,80px) / repeat(3, 250px);
     grid-gap: 50px;
     padding-left: 300px;
 }
-.barre-skill {
-    height: 15px;
-    background: rgb(167,146,243);
-    border-radius: 5px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-.barre-grises {
-    position: absolute;
-    z-index: -1;
-    left: 0;
-    bottom: 0;
-    width: 500px;
-    height: 15px;
-    background: rgb(216,216,216);
-    border-radius: 5px;
-}
-.b1 {
-    width: 90%;
-}
-.b2 {
-    width: 75%;
-    background: rgb(243,237,146);
-}
-.b3 {
-    width: 70%;
-    background: rgb(243,237,146);
-}
-.b4 {
-    width: 80%;
-}
-.b5 {
-    width: 70%;
-}
-.b6 {
-    width: 80%;
-    background: rgb(243,237,146);
-}
 .label-skill {
-    font-size: 24px;
+    font-size: 100px;
 }
 /* Medias Range */
 
@@ -853,10 +830,17 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
+#nespresso {
+    background-color: black;
+}
+
 .boule-ico img {
-    width: 25px;
+    width: 40px;
+    border-radius: 50%;
 }
+
 
 .flex-cont-bloc-exp {
     width: 800px;
@@ -881,6 +865,7 @@ h1 {
     transition: transform 0.25s ease-in-out;
     position: relative;
     transform: translate(10px, -10px);
+    color: black;
 }
 .contenu-bloc:hover {
     transform: translate(0,0);

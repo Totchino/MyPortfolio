@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes projets</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins&family=DotGothic16&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Btn flottant gauche petit menu -->
+
+    <div class="btn-rond-menu">
+        <div class="cont-ligne">
+            <div class="ligne-unique"></div>
+        </div>
+    </div>
+
+    <!-- Navigation verticale -->
+
+    <nav class="nav-gauche">
+
+        <div class="blocs-menu">
+            <div class="cercle-portrait">
+                <img src="ressources/ultsch_c.jpg" alt="portrait img">
+            </div>
+        </div>
+
+        <div class="blocs-menu">
+            <span class="nav-menu-item">
+                <a href="index.html#accueil">
+                    Accueil
+                </a>
+            </span>
+        </div>
+        <div class="blocs-menu">
+            <span class="nav-menu-item">
+                <a href="index.html#pres">
+                    Présentation
+                </a>
+            </span>
+        </div>
+        <div class="blocs-menu">
+            <span class="nav-menu-item">
+                <a href="index.html#port">
+                    Projets
+                </a>
+            </span>
+        </div>
+        <div class="blocs-menu">
+            <span class="nav-menu-item">
+                <a href="index.html#range">
+                    Compétences
+                </a>
+            </span>
+        </div>
+        <div class="blocs-menu">
+            <span class="nav-menu-item">
+                <a href="index.html#contact">
+                    Contact
+                </a>
+            </span>
+        </div>
+
+
+
+        <div class="blocs-menu">
+            <div class="logo-cercle">
+                <a href="index.html#contact">
+                    <img src="ressources/contact.svg" alt="logo contact">
+                </a>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- Section Projets -->
+
+    <section class="accueil" id="accueil">
+        <h1>Mes projets</h1>
+        <p class="txt-animation"></p>
+        <a href="#" class="btn-acc btn-acc1">Portfolio</a>
+        <a href="#" class="btn-acc btn-acc2">Expériences</a>
+
+        <div class="medias">
+            <a href="https://github.com/Totchino" target="blank">
+                <div class="media media1">
+                    <img src="ressources/github.svg" alt="github icone" class="icone-medias">
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/ultsch-christophe-etna/" target="blank">
+                <div class="media media2">
+                    <img src="ressources/linkedin.svg" alt="linkedin icone" class="icone-medias">
+                </div>
+            </a>
+        </div>
+
+        <a href="#pres">
+            <div class="btn-rond">
+                <img src="ressources/arrowDown.svg" alt="logo fleche bas" class="logo-btn-rond-acc">
+            </div>
+        </a>
+    </section>
+
+<!-- Section Présentation -->
+
+
+
+<!-- Section Parallax -->
+
+<div class="section-parallax">
+    <p class="txt-par">
+        752 tasses de café
+    </p>
+    <p class="txt-par">
+        86 projets
+    </p>
+    <p class="txt-par">
+        38 clients
+    </p>
+</div>
+
+
+<!-- Section Contact -->
+
+<section class="section-contact" id="contact">
+
+    <h2><strong>Rentrons</strong> en Contact</h2>
+
+    <div class="container-form">
+
+        <form class="form-bloc">
+
+            <div class="form-groupe">
+                <label for="prenom">Prénom</label>
+                <input type="text" required maxlength="16" id="prenom">
+            </div>
+            <div class="form-groupe">
+                <label for="nom">Nom</label>
+                <input type="text" required maxlength="16" id="nom">
+            </div>
+            <div class="form-groupe">
+                <textarea id="txt" placeholder="Votre message" required></textarea>
+            </div>
+
+            <div class="form-groupe">
+                <input type="submit" value="ENVOYER" class="button-sub">
+            </div>
+
+        </form>
+
+    </div>
+
+
+</section>
+
+<footer>
+    Tout Droits réservés &copy;
+</footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
