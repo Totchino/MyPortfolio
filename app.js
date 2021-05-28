@@ -95,14 +95,12 @@ window.addEventListener('load', () => {
 const presentationContainer = document.querySelector('.presentation')
 const titrePres = document.querySelector('.titre-pres');
 const presGauche = document.querySelector('.pres-gauche')
-const listePres = document.querySelectorAll('.item-liste')
 
 const tlpres = new TimelineMax();
 
 tlpres
 .from(titrePres, {y: -200, opacity: 0, duration: 0.6})
 .from(presGauche, {y:-20, opacity: 0, duration: 0.6}, '-=0.5')
-.staggerFrom(listePres, 1, {opacity: 0}, 0.2, '-=0.5')
 
 const controller = new ScrollMagic.Controller();
 
@@ -179,19 +177,18 @@ const scene4 = new ScrollMagic.Scene({
 
 const sectionComp = document.querySelector('.section-range');
 const titreComp = document.querySelector('.titre-exp');
-const allLabel = document.querySelectorAll('.label-skill')
-const allPourcent = document.querySelectorAll('.number-skill')
-const allBarres = document.querySelectorAll('.barre-skill')
-const allShadowBarres = document.querySelectorAll('.barre-grises')
+const allLabel = document.querySelectorAll('.range-cont');
+const allPourcent = document.querySelectorAll('.label-skill');
+
+
 
 const tlCompetences = new TimelineMax();
 
 tlCompetences
 .from(titreComp, {opacity: 0, duration: 0.6})
-.staggerFrom(allLabel, 0.5, {y: -50, opacity:0}, 0.1, '-=0.5')
+.staggerFrom(allLabel, 1, {y: -50, opacity:0}, 0.1, '-=0.5')
 .staggerFrom(allPourcent, 0.5, {y: -10, opacity:0}, 0.1, '-=1')
-.staggerFrom(allShadowBarres, 0.5, {y: -10, opacity:0}, 0.1, '-=1')
-.staggerFrom(allBarres, 0.5, {y: -10, opacity:0}, 0.1, '-=1')
+
 
 const scene5 = new ScrollMagic.Scene({
     triggerElement: sectionComp,

@@ -703,7 +703,7 @@ p.paragraphe {
     align-items: center;
     flex-direction: column;
     padding-bottom: 200px;
-    border-bottom: 1px dashed #333;
+    /* border-bottom: 1px dashed #333; */
     background: #333;
     /* background-image: linear-gradient(to right, #29323c, #485563); */
     color: #f1f1f1;
@@ -714,13 +714,13 @@ p.paragraphe {
     position: relative;
     /* background-color: pink; */
     display: flex;
-    justify-content: center;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
     font-size: 24px;
 }
 .range-cont img {
-    width: 20%;
+    padding-left: 10px;
+    width: 30%;
 
 }
 .titre-exp {
