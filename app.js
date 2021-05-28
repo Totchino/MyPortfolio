@@ -44,7 +44,7 @@ typewriter
 .typeString('<span style="color: #EA39ff;"> PhP</span> !')
 .pauseFor(1000)
 .deleteChars(5)
-.typeString('<span style="color: midnightblue;"> React</span> !')
+.typeString('<span style="color: yellow;"> Python</span> !')
 .pauseFor(1000)
 .deleteChars(8)
 .typeString('<span style="color: #ff6910;"> JavaScript</span> !')
